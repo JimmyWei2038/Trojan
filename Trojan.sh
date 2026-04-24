@@ -133,8 +133,8 @@ cat > /root/trojan/trojan/server.conf <<-EOF
     ],
     "log_level": 1,
     "ssl": {
-        "cert": "/root/trojan/trojan-cert/cert.cer",
-        "key": "/root/trojan/trojan-cert/private.key",
+        "cert": "/root/trojan/trojan-cert/fullchain.pem",
+        "key": "/root/trojan/trojan-cert/private.pem",
         "key_password": "",
         "cipher": "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384",
         "cipher_tls13": "TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384",
@@ -215,8 +215,8 @@ cat > /root/trojan/配置.txt <<-EOF
 	密码：00000000
 	端口：443
 	请将
-	xxx.xxx.xxx_chain.crt改名为cert.cer
-    xxx.xxx.xxx_key.key改名为private.key 
+	xxx.xxx.xxx_chain.crt改名为fullchain.pem
+    xxx.xxx.xxx_key.key改名为private.pem 
 	上传至/root/trojan/trojan-cert 
 
 ==========================================================
@@ -229,8 +229,8 @@ blue "	域名：$your_domain"
 blue "	密码：00000000"
 blue "	端口：443"
 blue "	请将"
-blue "	xxx.xxx.xxx_chain.crt改名为cert.cer"
-blue "  xxx.xxx.xxx_key.key改名为private.key"
+blue "	xxx.xxx.xxx_chain.crt改名为fullchain.pem"
+blue "  xxx.xxx.xxx_key.key改名为private.pem"
 blue "	上传至/root/trojan/trojan-cert "
 red "	 执行 systemctl restart trojan "
 green "=========================================="
