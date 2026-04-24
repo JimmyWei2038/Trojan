@@ -232,8 +232,8 @@ blue "	请将"
 blue "	xxx.xxx.xxx_chain.crt改名为fullchain.pem"
 blue "  xxx.xxx.xxx_key.key改名为private.pem"
 blue "	上传至/root/trojan/trojan-cert "
-red "	 执行 systemctl restart trojan 重启Trojan 服务"
-red "	 执行 systemctl status trojan  查看Trojan 运行状态"
+red "	 systemctl restart trojan   # 重启Trojan 服务"
+red "	 systemctl status trojan    # 查看Trojan 运行状态"
 
 # 生成 Trojan 分享链接
 TROJAN_LINK="trojan://00000000@${your_domain}:443?sni=${your_domain}#${your_domain}-trojan"
